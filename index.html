@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Half-Life 2 Main Menu replica</title>
+   <script defer src="/script.js"></script>
+   <link rel="stylesheet" href="/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="screen">
+      <i class="fas fa-volume-mute fa 2x" id="sound"></i>
+      
+      <video autoplay loop muted id="videoBackground">
+         <source src="/background.mp4" type="video/mp4"> 
+      </video>
+
+      <audio id="audioClick">
+         <source src="/ui/buttonclick.wav" type="audio/wav">
+      </audio>
+
+      <audio id="audioHover">
+         <source src="/ui/buttonrollover.wav" type="audio/wav">
+      </audio>
+
+      <div class="menu">
+         <h1>Hλlf-Life<sup>2</sup></h1>
+         <h3>Episode Two</h3>
+         <ul>
+            <li><a href="#">New Game</a></li>
+            <li><a href="#">Load Game</a></li>
+            <li><a href="#">Developer Commentary</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Options</a></li>
+            <li><a href="#">Quit</a></li>
+         </ul>
+      </div>
+   </div>
+</body>
+</html>
